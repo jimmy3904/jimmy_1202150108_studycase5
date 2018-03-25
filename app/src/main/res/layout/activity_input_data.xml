@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.jm.jimmy_1202150108_modul5.input_data">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To Do Name "
+            android:textSize="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="5dp"/>
+
+        <EditText
+            android:id="@+id/aktifitas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="8"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description "
+            android:textSize="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="5dp"/>
+
+        <EditText
+            android:id="@+id/dekripsi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="8"
+            android:inputType="text"
+            android:layout_marginLeft="5dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Priority "
+            android:textSize="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="5dp"/>
+
+        <EditText
+            android:id="@+id/prioritas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="8"
+            android:inputType="number"
+            android:layout_marginLeft="30dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorAccent"
+        android:text="Tambah To Do"
+        android:onClick="tambah"/>
+
+</LinearLayout>
